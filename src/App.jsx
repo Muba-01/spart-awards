@@ -177,12 +177,14 @@ const App = () => {
     { name: "Lumina Lighting", type: "Bronze Sponsor", icon: Sparkles }
   ];
 
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+
   const handleVote = (category, id) => {
     setVotes(prev => ({ ...prev, [category]: id }));
   };
 
   const submitVotes = () => {
-    fetch('http://localhost:3001/api/vote', {
+    fetch(`${BACKEND_URL}/api/vote`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -806,7 +808,7 @@ const App = () => {
                         alert('Please enter a valid email address.');
                       }
                     }} className="w-full bg-[#D4AF37] text-black font-bold py-3 uppercase tracking-widest hover:bg-white transition-colors rounded-[4px]">Continue to Ballot</button>
-                    <a href="http://localhost:3001/admin" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-xs text-gray-500 hover:text-white underline">Admin Portal</a>
+                    <a href={`${BACKEND_URL}/api/admin/dashboard`} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-xs text-gray-500 hover:text-white underline">Admin Portal</a>
                   </div>
                 ) : (
                   <div className="space-y-12">

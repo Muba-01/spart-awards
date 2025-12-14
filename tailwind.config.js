@@ -21,7 +21,7 @@ export default {
         },
         waveSlow: {
           '0%': { transform: 'translateX(0) translateY(0)' },
-          '50%': { transform: 'translateX(-20px) translateY(10px)' },
+          '50%': { transform: 'translateX(-2.5rem) translateY(1.25rem)' },
           '100%': { transform: 'translateX(0) translateY(0)' },
         },
         grain: {

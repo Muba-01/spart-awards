@@ -28,7 +28,8 @@ import {
   PenTool,
   ThumbsUp,
   CheckCircle2,
-  Globe
+  Globe,
+  Instagram
 } from 'lucide-react';
 import aliyaYasmine from './assets/Aliya Yasmine-min.png';
 import dayronOoi from './assets/Dayron Ooi-min.png';
@@ -638,7 +639,16 @@ const App = () => {
                    <Reveal delay={700}>
                       <p>We have been lucky enough to partner with a trustworthy organization that sends emergency funds to Gaza in the form of food and aid. By attending the Spart Awards, you are directly contributing to this vital relief effort.</p>
                    </Reveal>
+
                    
+                   
+                   <div className="text-center mt-8">
+                      <a href="https://www.instagram.com/yaqob.salama" target="_blank" rel="noopener noreferrer" className="text-gray-500 text-sm inline-flex items-center gap-2 hover:text-[#7B1E26] transition-colors">
+                          <Instagram size={16} />
+                          source: @yaqob.salama
+                      </a>
+                   </div>
+
                    <Reveal delay={800}>
                       <div className="pt-8">
                         <button onClick={handleGetTickets} className="bg-[#7B1E26] text-white px-8 py-4 rounded-none font-bold uppercase tracking-[0.2em] shadow-xl hover:bg-black transition-all flex items-center gap-3"><Ticket size={20} /> Purchase Ticket to Support</button>
@@ -671,6 +681,13 @@ const App = () => {
                       </div>
                    </Reveal>
                 </div>
+             </div>
+
+             <div className="text-center mt-8">
+                <a href="https://www.instagram.com/yaqob.salama" target="_blank" rel="noopener noreferrer" className="text-gray-500 text-sm inline-flex items-center gap-2 hover:text-[#7B1E26] transition-colors">
+                    <Instagram size={16} />
+                    source: @yaqob.salama
+                </a>
              </div>
              
              <div className="mt-24 border-t border-[#7B1E26]/20 pt-16">

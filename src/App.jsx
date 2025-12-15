@@ -61,6 +61,7 @@ import natashaandkhaisern from './assets/whilethecoffeebrews.webp';
 import rey from './assets/midnightrain.webp';
 import zakyandkeeryn from './assets/scottpilgrim.webp';
 import lovestruckdirector from './assets/lovestruck.webp';    
+import keiwtcb from './assets/kei-wtcb.webp';
 
 // Original Play Posters (Home & Categories)
 
@@ -361,7 +362,7 @@ const App = () => {
           { name: "Erynn Wong", role: "While The Coffee Brews", img: erynnWong },
           { name: "Justin Hee", role: "While The Coffee Brews", img: justinHeeman },
           { name: "Edlin Raihana", role: "While The Coffee Brews", img: edlinRaihana },
-          { name: "Kei Too", role: "While The Coffee Brews", img: keiToo },
+          { name: "Kei Too", role: "While The Coffee Brews", img: keiwtcb },
           { name: "Ong Xiao Wen", role: "Lovestruck", img: ongXiaoWen },
           { name: "Rasheeda", role: "Lovestruck", img: rasheeda },
           { name: "Manny", role: "Scott Pilgrim vs The Stage", img: manny },
@@ -692,7 +693,7 @@ const App = () => {
                     <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-black rounded-none"></div>
                     <div className="text-center space-y-4 md:space-y-6">        
                       <div className="uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold text-gray-400">Non Member</div>
-                      <div className="text-5xl md:text-7xl font-bold font-serif text-[#7B1E26] flex justify-center items-start"><span className="text-xl md:text-2xl mt-2 mr-1">RM</span>15</div>
+                      <div className="text-5xl md:text-7xl font-bold font-serif text-[#7B1E26] flex justify-center items-start"><span className="text-xl md:text-2xl mt-2 mr-1">RM</span>20</div>
                       <h3 className="text-xl md:text-3xl font-bold">Non Member</h3>
                       <ul className="space-y-2 text-gray-500 text-[10px] md:text-sm font-medium">
                           <li>• General Entry</li>
@@ -706,7 +707,7 @@ const App = () => {
                     <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-none"></div>
                     <div className="text-center space-y-4 md:space-y-6 relative z-10">
                       <div className="uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold text-white/50">Member</div>
-                      <div className="text-5xl md:text-7xl font-bold font-serif text-white flex justify-center items-start"><span className="text-xl md:text-2xl mt-2 mr-1 text-white/50">RM</span>20</div>
+                      <div className="text-5xl md:text-7xl font-bold font-serif text-white flex justify-center items-start"><span className="text-xl md:text-2xl mt-2 mr-1 text-white/50">RM</span>15</div>
                       <h3 className="text-xl md:text-3xl font-bold">Member</h3>
                       <ul className="space-y-2 text-white/60 text-[10px] md:text-sm font-medium"><li>• General Entry</li></ul>
                     </div>

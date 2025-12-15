@@ -60,10 +60,10 @@ const CharityPage = ({ handleGetTickets }) => {
        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-12 text-lg leading-relaxed text-gray-700 font-serif">
                    <Reveal delay={300}>
-                      <div className="flex items-end">
-                         <span className="text-5xl font-bold text-[#7B1E26] mr-2">The</span>
-                         <span className="text-lg leading-relaxed text-gray-700 font-serif">Spart Awards is also a charity event, with all proceeds going towards emergency aid in Gaza. For the past years, an ongoing humanitarian crisis has tragically unfolded in Palestine. Hundreds of thousands of innocent men, women, and children have lost their lives or suffered life-altering injuries.</span>
-                      </div>
+                      <p className="text-lg leading-relaxed text-gray-700 font-serif">
+                         <span className="text-5xl font-bold text-[#7B1E26] mr-2 inline-block align-text-bottom leading-none">The</span>
+                         Spart Awards is also a charity event, with all proceeds going towards emergency aid in Gaza. For the past years, an ongoing humanitarian crisis has tragically unfolded in Palestine. Hundreds of thousands of innocent men, women, and children have lost their lives or suffered life-altering injuries.
+                      </p>
                    </Reveal>             <Reveal delay={400}>
                 <div className="w-full h-64 bg-stone-200 flex items-center justify-center text-stone-400 border border-stone-300 mb-8 md:hidden">
                   <img src={charity1} alt="Charity 1" loading="lazy" className="w-full h-full object-cover" />

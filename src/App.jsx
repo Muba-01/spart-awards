@@ -361,7 +361,7 @@ const App = () => {
           { name: "Erynn Wong", role: "While The Coffee Brews", img: erynnWong },
           { name: "Justin Hee", role: "While The Coffee Brews", img: justinHeeman },
           { name: "Edlin Raihana", role: "While The Coffee Brews", img: edlinRaihana },
-          { name: "Kei Too", role: "Till Death Do Us Part", img: keiToo },
+          { name: "Kei Too", role: "While The Coffee Brews", img: keiToo },
           { name: "Ong Xiao Wen", role: "Lovestruck", img: ongXiaoWen },
           { name: "Rasheeda", role: "Lovestruck", img: rasheeda },
           { name: "Manny", role: "Scott Pilgrim vs The Stage", img: manny },
@@ -581,7 +581,7 @@ const App = () => {
                                  <h3 className="text-2xl font-bold mb-2 font-serif leading-tight">{play.title}</h3>
                                  <div className="h-0.5 w-10 bg-[#7B1E26] mb-2"></div>
                                  <p className="text-xs italic opacity-80 mb-4"></p>
-                                 {position === 'center' && <div className="bg-white text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 inline-block mt-2">Read Description</div>}
+                                 
                                </div>
                             </div>
                           </div>

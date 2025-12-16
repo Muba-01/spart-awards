@@ -411,22 +411,10 @@ const App = () => {
         title: "Audience Choice Award (Play)",
         nominees: allPlays
       },
-      {
-        id: "audience_actor",
-        title: "Audience Choice Award (Actor/Actress)",
-        nominees: [
-          { name: "Eddie Lim", role: "Lovestruck", img: eddieLim },
-          { name: "Sid Ravindran", role: "Have We Met Before?", img: sidRavidran },
-          { name: "Samitinjay De", role: "Midnight Rain", img: samitinjayDe },
-          { name: "Dayron Ooi", role: "Till Death Do Us Part", img: dayronOoi },
-          { name: "Aliya Yasmine", role: "The Other Woman", img: aliyaYasmine },
-          { name: "Joanna Kean", role: "Till Death Do Us Part", img: joanna },
-          { name: "Kei Too", role: "Till Death Do Us Part", img: keiToo },
-          { name: "Minori Grace", role: "Lovestruck", img: minoriGrace },
-        ]
-      }
     ]
   };
+
+  
 
   const nominees = {
     plays: [
@@ -805,6 +793,51 @@ const App = () => {
                               </div>
                            ))}
                         </div>
+                        {tierKey === 'tier3' && (
+                            <div className="mt-32">
+                                <Reveal delay={100}>
+                                    <div className="text-center mb-12">
+                                        <h4 className="text-2xl md:text-4xl font-bold font-serif mb-2">Audience Choice Award (Actor/Actress)</h4>
+                                        <div className="h-1 w-24 mx-auto bg-gray-200"></div>
+                                    </div>
+                                </Reveal>
+                                
+                                <Reveal delay={200}>
+                                    <div className="bg-gray-50 p-8 md:p-12 rounded-none border border-gray-200">
+                                        <h5 className="text-2xl font-bold text-center mb-8 text-[#7B1E26]">How to Vote</h5>
+                                        <div className="grid md:grid-cols-3 gap-8 text-center">
+                                            {/* Step 1 */}
+                                            <div className="flex flex-col items-center">
+                                                <div className="bg-[#7B1E26] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-4">1</div>
+                                                <h6 className="font-bold text-lg mb-2">Nominate an Actor/Actress</h6>
+                                                <p className="text-gray-600">Choose any performer from any of the 2025 SPART plays.</p>
+                                            </div>
+                                            {/* Step 2 */}
+                                            <div className="flex flex-col items-center">
+                                                <div className="bg-[#7B1E26] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-4">2</div>
+                                                <h6 className="font-bold text-lg mb-2">Provide Details</h6>
+                                                <p className="text-gray-600">In the form, you must state the performer's name, the play they were in, and the character they portrayed.</p>
+                                            </div>
+                                            {/* Step 3 */}
+                                            <div className="flex flex-col items-center">
+                                                <div className="bg-[#7B1E26] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-4">3</div>
+                                                <h6 className="font-bold text-lg mb-2">Cast Your Vote</h6>
+                                                <p className="text-gray-600">Once you've filled in the details, submit the form to cast your vote!</p>
+                                            </div>
+                                        </div>
+                                        <div className="mt-12 text-center">
+                                            <button 
+                                                onClick={() => window.open('https://forms.gle/6x6Qj6j7hU9yZ3GP6', '_blank')}
+                                                className="group relative overflow-hidden bg-black text-white px-10 py-4 text-lg uppercase tracking-widest transition-all duration-300 shadow-lg flex items-center justify-center gap-2 min-w-[12.5rem] rounded-none hover:shadow-2xl mx-auto"
+                                            >
+                                                <span className="relative z-10 flex items-center gap-2 group-hover:scale-105 transition-transform group-hover:-translate-y-1"><Vote size={20} /> Vote Now</span>
+                                                <div className="absolute inset-0 bg-[#7B1E26] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </Reveal>
+                            </div>
+                        )}
                      </div>
                    )
                 })}

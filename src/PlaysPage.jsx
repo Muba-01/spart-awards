@@ -98,7 +98,7 @@ const PlaysPage = ({ plays2025 }) => {
 
                     <Reveal delay={700}>
                        <button 
-                          onClick={() => window.open('https://forms.gle/VNTwMaaanYgJzBoo7', '_blank')}
+                          onClick={() => window.open('https://forms.gle/4eUHWjgGphPeqzH98', '_blank')}
                           className="self-start px-8 py-3 border border-black text-black uppercase tracking-widest text-xs font-bold hover:bg-black hover:text-white transition-all duration-300 flex items-center gap-2">
                           <Vote size={16} /> Vote for Play
                        </button>

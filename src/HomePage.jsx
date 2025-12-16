@@ -137,7 +137,7 @@ const HomePage = ({ activeTab, handleNavClick, handleGetTickets, nominees, award
               <span className="relative z-10 flex items-center gap-2 group-hover:scale-105 transition-transform group-hover:-translate-y-1"><Ticket size={20} /> Get Tickets</span>
               <div className="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </button>
-            <button onClick={() => window.open('https://forms.gle/VNTwMaaanYgJzBoo7', '_blank')} className="group relative overflow-hidden border-2 border-black text-black px-10 py-4 text-lg uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 min-w-[12.5rem] rounded-none hover:text-white">
+            <button onClick={() => window.open('https://forms.gle/4eUHWjgGphPeqzH98', '_blank')} className="group relative overflow-hidden border-2 border-black text-black px-10 py-4 text-lg uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 min-w-[12.5rem] rounded-none hover:text-white">
               <span className="relative z-10 flex items-center gap-2 group-hover:scale-105 transition-transform group-hover:-translate-y-1"><Vote size={20} /> Vote</span>
               <div className="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </button>
@@ -186,7 +186,7 @@ const HomePage = ({ activeTab, handleNavClick, handleGetTickets, nominees, award
                 <Reveal delay={300}><p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-md font-light">Society of Performing Arts @ Taylor’s (SPART) is hosting its first annual awards show to celebrate and recognize the theatre events and productions they brought to life throughout 2025.</p></Reveal>
               </div>
               <div className="relative z-10 mt-12 w-fit">
-                <button onClick={() => window.open('https://forms.gle/VNTwMaaanYgJzBoo7', '_blank')} className="group/btn relative px-10 py-4 bg-white text-black font-bold uppercase tracking-widest rounded-none overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+                <button onClick={() => window.open('https://forms.gle/4eUHWjgGphPeqzH98', '_blank')} className="group/btn relative px-10 py-4 bg-white text-black font-bold uppercase tracking-widest rounded-none overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
                   <div className="absolute inset-0 bg-[#7B1E26] translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 ease-in-out"></div>
                   <span className="relative z-10 flex items-center gap-3 group-hover/btn:text-white transition-colors">Vote<ChevronRight size={18} className="group-hover/btn:translate-x-1 transition-transform"/></span>
                 </button>

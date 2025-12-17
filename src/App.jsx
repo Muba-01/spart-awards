@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   Ticket, 
   Vote, 
@@ -1010,6 +1011,8 @@ const App = () => {
         )}
 
       </main>
+
+      <Analytics />
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-12 mt-auto">
